@@ -1,0 +1,7 @@
+key1:
+  key11: 1
+  key12: 2
+  list:
+  - a
+  - b
+  - c
