@@ -1,0 +1,6 @@
+---
+name: config2
+nested:
+  key: bar
+  value: 22
+feature_flags: {}

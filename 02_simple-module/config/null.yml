@@ -1,0 +1,7 @@
+name: null
+some_number: null
+feature_flags:
+  'NULL': null
+nested:
+  key: null
+  value: null

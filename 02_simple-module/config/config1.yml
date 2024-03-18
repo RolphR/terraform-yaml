@@ -1,0 +1,10 @@
+---
+name: config1
+some_number: 1
+nested:
+  key: foo
+  value: 11
+feature_flags:
+  FOO: true
+  BAR: false
+  BAZ: true
