@@ -1,0 +1,20 @@
+- name: egress-deny-external-all
+  priority: 9999
+  action: deny
+  source: 10.0.0.0/8
+  destination: 0.0.0.0/0
+  protocols:
+    - protocol: tcp
+      ports:
+      - all
+    - protocol: udp
+      ports:
+      - all
+    - protocol: icmp
+- name: egress-allow-internal-icmp
+  priority: 1000
+  action: allow
+  source: 10.0.0.0/8
+  destination: 10.0.0.0/8
+  protocols:
+    - protocol: icmp

@@ -1,0 +1,18 @@
+- name: ingress-allow-external-loadbalancers
+  priority: 1000
+  action: allow
+  source: 0.0.0.0/0
+  destination: 10.0.1.0/24
+  protocols:
+    - protocol: tcp
+      ports:
+      - 443
+      - 22
+    - protocol: icmp
+- name: ingress-allow-internal-icmp
+  priority: 1000
+  action: allow
+  source: 10.0.0.0/8
+  destination: 10.0.0.0/8
+  protocols:
+    - protocol: icmp
